@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuzzy Logic</title>
+    <style>
+        #leftbox {
+            float:left; 
+            width:45%;
+            height: 100vh;
+        }
+        #middlebox{
+            float:left; 
+            background:rgb(84, 175, 228);
+            width:200px;
+            height: 550px;
+            text-align: center;
+        }
+        #tenisBall {
+            border-radius: 50%;
+            width: 100px;
+            height: 120px;
+            position:absolute;
+            left:50%;
+            transform: translateX(-50%);
+            top: 200px;
+        }
+
+        #target {
+            position:absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 225px;
+            background: rgba(0, 0, 0, 0.0);
+            width: 32px;
+            height: 32px;
+            shape-outside: ellipse(50% 50%);
+            clip-path: ellipse(50% 50%);
+        }
+
+        #venti {
+            position:relative;
+            top: 555px;
+            width: 180px; 
+            height: 180px;  
+            margin-left: 10px;  
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="leftbox"></div>
+        <div id="middlebox">
+            <div id="target"></div>
+            <div ><img id="tenisBall" src="./assets/tenisBall.png" alt="tenisBall"></div>
+            <div><img id="venti" src="./assets/venti.png" alt="venti"></div>
+        </div>
+    </div>
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>
